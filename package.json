@@ -1,6 +1,6 @@
 {
   "name": "100-ways-to-die",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "all the ways you can kill a node server",
   "main": "index.js",
   "scripts": {
