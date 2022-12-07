@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony throng.js"
+    "start": "node throng.js"
   },
   "author": "Matthew Mueller",
   "license": "MIT",
   "dependencies": {
-    "roo": "0.2.0",
-    "throng": "^1.0.0"
+    "lodash": "4.17.21",
+    "throng": "^1.0.0",
+    "yoo": "1.8.6"
   },
   "engine": {
     "node": "0.12"

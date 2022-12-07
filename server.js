@@ -2,28 +2,28 @@
  * Module Dependencies
  */
 
-var roo = module.exports = require('roo')(__dirname);
+var yoo = module.exports = require('yoo')(__dirname);
 
 /**
  * Die
  */
 
- roo.get('/uncaught/sync', function *(next) {
+ yoo.get('/uncaught/sync', function *(next) {
    throw new Error('sync error');
  });
 
- roo.get('/uncaught/async', function *(next) {
+ yoo.get('/uncaught/async', function *(next) {
    console.log('handling!');
    process.nextTick(function() {
      throw new Error('async error');
    });
  });
 
- roo.get('/process/exit', function *(next) {
+ yoo.get('/process/exit', function *(next) {
    process.exit();
  })
 
- roo.get('/', function *(next) {
+ yoo.get('/', function *(next) {
    console.log('getting /');
    this.body = 'I\'m alive!';
  })
